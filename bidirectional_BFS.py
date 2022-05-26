@@ -1,4 +1,6 @@
-class BidirectionalBFSSearch:
+# Matin Rezania 983112057
+# کنترل تکراری بودن در هنگام بسط دادن هم انجام شده، در خط‌های 44، 59، 74 و 91
+class BidirectionalBFS:
     def get_input(self):
         '''
         input() takes a string as input. "1 2 3"
@@ -148,7 +150,7 @@ class BidirectionalBFSSearch:
                 print(node, end=" ")
 
 
-graph = BidirectionalBFSSearch()
+graph = BidirectionalBFS()
 graph.get_input()
 graph.search()
 graph.print_result()

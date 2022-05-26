@@ -1,4 +1,6 @@
-class UCSSearch:
+# Matin Rezania 983112057
+# کنترل تکراری بودن در هنگام بسط دادن هم انجام شده، در خط‌های 36، 52، 68 و 84
+class UCS:
 
     def __init__(self):
         self.current_node = {"position": {"x": 1, "y": 1},
@@ -116,7 +118,7 @@ class UCSSearch:
         print(self.current_node["gn"])
 
 
-graph = UCSSearch()
+graph = UCS()
 graph.get_input()
 graph.search()
 graph.print_result()
