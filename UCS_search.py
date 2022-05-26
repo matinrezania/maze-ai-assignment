@@ -82,8 +82,6 @@ while True:
 
     # check wheter it can go rigth, check for obstacles and walls and duplicate
     # this case is only for start node, which doesn't have a prent node
-    print(new_node["position"], "jjj", current_node["position"]
-          ["x"]-1, current_node["position"]["y"]-1)
     if new_node["position"]["x"] != 6 and new_node not in queue_nodes and horizontal_matrix[current_node["position"]["x"]-1][current_node["position"]["y"]-1] == 0:
         if not current_node["parent_node"]:
             queue_nodes.append(new_node)
